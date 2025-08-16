@@ -182,3 +182,19 @@
 2025-08-16 17:39:53.044 +05:30 [INF] Application started. Press Ctrl+C to shut down.
 2025-08-16 17:39:53.044 +05:30 [INF] Hosting environment: Development
 2025-08-16 17:39:53.044 +05:30 [INF] Content root path: /Users/burlasainihal/Documents/otherss/raz-server
+2025-08-16 17:42:11.473 +05:30 [INF] Starting RazServer application
+2025-08-16 17:42:11.620 +05:30 [INF] RazServer started successfully on https://localhost:5001
+2025-08-16 17:42:11.627 +05:30 [INF] User profile is available. Using '/Users/burlasainihal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-16 17:42:11.664 +05:30 [INF] Now listening on: http://localhost:5159
+2025-08-16 17:42:11.665 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 17:42:11.665 +05:30 [INF] Hosting environment: Development
+2025-08-16 17:42:11.665 +05:30 [INF] Content root path: /Users/burlasainihal/Documents/otherss/raz-server
+2025-08-16 17:43:21.040 +05:30 [INF] Application is shutting down...
+2025-08-16 17:43:21.059 +05:30 [INF] RazServer is shutting down
+2025-08-16 17:43:37.579 +05:30 [INF] Starting RazServer application
+2025-08-16 17:43:37.724 +05:30 [INF] RazServer started successfully on https://localhost:5001
+2025-08-16 17:43:37.730 +05:30 [INF] User profile is available. Using '/Users/burlasainihal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-16 17:43:37.765 +05:30 [INF] Now listening on: http://localhost:5159
+2025-08-16 17:43:37.767 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 17:43:37.767 +05:30 [INF] Hosting environment: Development
+2025-08-16 17:43:37.767 +05:30 [INF] Content root path: /Users/burlasainihal/Documents/otherss/raz-server
