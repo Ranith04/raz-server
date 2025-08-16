@@ -1,0 +1,145 @@
+2025-08-16 17:14:24.000 +05:30 [INF] Starting RazServer application
+2025-08-16 17:14:24.179 +05:30 [INF] RazServer started successfully on https://localhost:5001
+2025-08-16 17:14:24.187 +05:30 [INF] User profile is available. Using '/Users/burlasainihal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-16 17:14:24.229 +05:30 [INF] Now listening on: http://localhost:5159
+2025-08-16 17:14:24.230 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 17:14:24.230 +05:30 [INF] Hosting environment: Development
+2025-08-16 17:14:24.230 +05:30 [INF] Content root path: /Users/burlasainihal/Documents/otherss/raz-server
+2025-08-16 17:14:52.595 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:14:52.608 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-16 17:14:52.645 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 404 0 null 51.228ms
+2025-08-16 17:14:52.662 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5159/swagger/index.html, Response status code: 404
+2025-08-16 17:16:00.663 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:16:00.670 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 404 0 null 8.2235ms
+2025-08-16 17:16:00.671 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5159/swagger/index.html, Response status code: 404
+2025-08-16 17:17:11.785 +05:30 [INF] Application is shutting down...
+2025-08-16 17:17:11.802 +05:30 [INF] RazServer is shutting down
+2025-08-16 17:17:26.691 +05:30 [INF] Starting RazServer application
+2025-08-16 17:17:26.844 +05:30 [INF] RazServer started successfully on https://localhost:5001
+2025-08-16 17:17:26.852 +05:30 [INF] User profile is available. Using '/Users/burlasainihal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-16 17:17:26.887 +05:30 [INF] Now listening on: http://localhost:5159
+2025-08-16 17:17:26.888 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 17:17:26.888 +05:30 [INF] Hosting environment: Development
+2025-08-16 17:17:26.888 +05:30 [INF] Content root path: /Users/burlasainihal/Documents/otherss/raz-server
+2025-08-16 17:17:35.446 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:17:35.483 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 38.6499ms
+2025-08-16 17:17:35.492 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-16 17:17:35.492 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/swagger-ui-bundle.js - null null
+2025-08-16 17:17:35.492 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:17:35.492 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.css - null null
+2025-08-16 17:17:35.494 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/swagger-ui.css - null null
+2025-08-16 17:17:35.496 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 3.7462ms
+2025-08-16 17:17:35.503 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-08-16 17:17:35.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.css - 200 202 text/css 12.1253ms
+2025-08-16 17:17:35.511 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-16 17:17:35.511 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-16 17:17:35.512 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/swagger-ui-standalone-preset.js - 200 230007 text/javascript 20.4202ms
+2025-08-16 17:17:35.512 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/swagger-ui.css - 200 152035 text/css 17.984ms
+2025-08-16 17:17:35.513 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-16 17:17:35.513 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/swagger-ui-bundle.js - 200 1426001 text/javascript 20.8525ms
+2025-08-16 17:17:35.584 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:17:35.595 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/favicon-32x32.png - null null
+2025-08-16 17:17:35.596 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-08-16 17:17:35.596 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/favicon-32x32.png - 200 628 image/png 0.9016ms
+2025-08-16 17:17:35.633 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.7685ms
+2025-08-16 17:17:46.901 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/health - null null
+2025-08-16 17:17:46.904 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-08-16 17:17:46.948 +05:30 [INF] Executing endpoint 'HTTP: GET /health'
+2025-08-16 17:17:46.949 +05:30 [INF] Executed endpoint 'HTTP: GET /health'
+2025-08-16 17:17:46.950 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/health - 200 null application/json; charset=utf-8 49.0272ms
+2025-08-16 17:18:47.627 +05:30 [INF] Application is shutting down...
+2025-08-16 17:18:47.643 +05:30 [INF] RazServer is shutting down
+2025-08-16 17:18:50.925 +05:30 [INF] Starting RazServer application
+2025-08-16 17:18:51.077 +05:30 [INF] RazServer started successfully on https://localhost:5001
+2025-08-16 17:18:51.085 +05:30 [INF] User profile is available. Using '/Users/burlasainihal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-16 17:18:51.123 +05:30 [INF] Now listening on: http://localhost:5159
+2025-08-16 17:18:51.124 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 17:18:51.124 +05:30 [INF] Hosting environment: Development
+2025-08-16 17:18:51.124 +05:30 [INF] Content root path: /Users/burlasainihal/Documents/otherss/raz-server
+2025-08-16 17:18:54.457 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:18:54.495 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 38.826ms
+2025-08-16 17:18:54.507 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:18:54.510 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 3.0078ms
+2025-08-16 17:18:54.536 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:18:54.584 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 47.9685ms
+2025-08-16 17:18:55.297 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:18:55.298 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 1.1316ms
+2025-08-16 17:18:55.304 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:18:55.304 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 0.6412ms
+2025-08-16 17:18:55.325 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:18:55.329 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.2758ms
+2025-08-16 17:18:55.458 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:18:55.459 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.4482ms
+2025-08-16 17:18:55.466 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:18:55.467 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 1.0176ms
+2025-08-16 17:18:55.484 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:18:55.485 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.9852ms
+2025-08-16 17:18:55.614 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:18:55.615 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.8285ms
+2025-08-16 17:18:55.619 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:18:55.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 1.0132ms
+2025-08-16 17:18:55.637 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:18:55.638 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.2317ms
+2025-08-16 17:18:55.758 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:18:55.758 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.35ms
+2025-08-16 17:18:55.763 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:18:55.764 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 0.8549ms
+2025-08-16 17:18:55.781 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:18:55.782 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.0193ms
+2025-08-16 17:18:55.904 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:18:55.905 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.4183ms
+2025-08-16 17:18:55.910 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:18:55.911 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 0.666ms
+2025-08-16 17:18:55.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:18:55.927 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 0.6393ms
+2025-08-16 17:18:56.059 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:18:56.059 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.2775ms
+2025-08-16 17:18:56.063 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:18:56.064 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 0.5122ms
+2025-08-16 17:18:56.078 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:18:56.079 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 0.645ms
+2025-08-16 17:18:56.213 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:18:56.214 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.2742ms
+2025-08-16 17:18:56.218 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:18:56.219 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 0.5722ms
+2025-08-16 17:18:56.235 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:18:56.235 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 0.5757ms
+2025-08-16 17:19:44.648 +05:30 [INF] Application is shutting down...
+2025-08-16 17:19:44.668 +05:30 [INF] RazServer is shutting down
+2025-08-16 17:19:49.015 +05:30 [INF] Starting RazServer application
+2025-08-16 17:19:49.166 +05:30 [INF] RazServer started successfully on https://localhost:5001
+2025-08-16 17:19:49.173 +05:30 [INF] User profile is available. Using '/Users/burlasainihal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-16 17:19:49.232 +05:30 [INF] Now listening on: http://localhost:5159
+2025-08-16 17:19:49.233 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 17:19:49.233 +05:30 [INF] Hosting environment: Development
+2025-08-16 17:19:49.234 +05:30 [INF] Content root path: /Users/burlasainihal/Documents/otherss/raz-server
+2025-08-16 17:19:52.681 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:19:52.721 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 41.25ms
+2025-08-16 17:19:52.732 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:19:52.734 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 1.874ms
+2025-08-16 17:19:52.753 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:19:52.801 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.003ms
+2025-08-16 17:19:55.772 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:19:55.773 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.7738ms
+2025-08-16 17:19:55.781 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:19:55.783 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 1.372ms
+2025-08-16 17:19:55.801 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:19:55.805 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.4749ms
+2025-08-16 17:19:56.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:19:56.136 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.4629ms
+2025-08-16 17:19:56.143 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:19:56.144 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 1.523ms
+2025-08-16 17:19:56.166 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:19:56.167 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.3738ms
+2025-08-16 17:19:56.306 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:19:56.307 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.8153ms
+2025-08-16 17:19:56.312 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:19:56.313 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 0.7501ms
+2025-08-16 17:19:56.331 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:19:56.332 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.1638ms
+2025-08-16 17:19:56.467 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:19:56.468 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 0.3198ms
+2025-08-16 17:19:56.472 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:19:56.473 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 0.7252ms
+2025-08-16 17:19:56.489 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:19:56.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 0.9398ms

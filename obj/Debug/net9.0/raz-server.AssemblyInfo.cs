@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("raz-server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4d97f91a970d92ef890f9f9d33e861d3818066e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9518e2c78228786cfe619ec45cfee806bfee86cd")]
 [assembly: System.Reflection.AssemblyProductAttribute("raz-server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("raz-server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

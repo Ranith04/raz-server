@@ -1,0 +1,29 @@
+RAZ-SERVER Implementation
+- UserAccount Table
+
+BEGIN;
+
+CREATE TABLE user_account (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50) NOT NULL,
+    middle_name VARCHAR(50),
+    last_name VARCHAR(50) NOT NULL,
+    mobile_number VARCHAR(15) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL, -- Store hashed password, never plain text
+    dob DATE NOT NULL,
+    country_of_birth VARCHAR(100) NOT NULL,
+    gender VARCHAR(20),
+    residential_address TEXT,
+    created_at TIMESTAMPTZ DEFAULT now(),
+    updated_at TIMESTAMPTZ,
+    is_active BOOL DEFAULT TRUE
+);
+
+CREATE TABLE user_documents
+(
+
+);
+
+--COMMIT;
+--ROLLBACK;
