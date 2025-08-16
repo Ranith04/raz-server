@@ -2,15 +2,16 @@
 
 using System.Data;
 using Dapper;
+using Nconnect.Entities;
 using RazServer.Entities;
 
 namespace RazServer.Repositories
 {
     public interface IUserRepository
     {
-        Task<UserAccount> Create(UserAccount item, IDbConnection tx = null);
-        Task<UserDocument> CreateDocument(UserDocument item, IDbConnection tx = null);
-        Task<UserBankAccount> CreateBankAccount(UserBankAccount item, IDbConnection tx = null);
+        Task<UserAccount> Create(UserAccount item, TxConnection tx = null);
+        Task<UserDocument> CreateDocument(UserDocument item, TxConnection tx = null);
+        Task<UserBankAccount> CreateBankAccount(UserBankAccount item, TxConnection tx = null);
     }
 
     public class UserRepository : BaseRepository, IUserRepository
@@ -19,7 +20,7 @@ namespace RazServer.Repositories
         {
 
         }
-        public async Task<UserAccount> Create(UserAccount item, IDbConnection tx = null)
+        public async Task<UserAccount> Create(UserAccount item, TxConnection tx = null)
         {
             var query = @"
                     INSERT INTO user_account 
@@ -31,10 +32,10 @@ namespace RazServer.Repositories
                     RETURNING *";
 
             using var con = NewConnection;
-            return await con.QuerySingleOrDefaultAsync<UserAccount>(query, item, transaction: tx as IDbTransaction);
+            return await (tx?.con ?? con).QuerySingleOrDefaultAsync<UserAccount>(query, item, tx?.transaction);
         }
 
-        public async Task<UserDocument> CreateDocument(UserDocument item, IDbConnection tx = null)
+        public async Task<UserDocument> CreateDocument(UserDocument item, TxConnection tx = null)
         {
             var query = @"
                 INSERT INTO user_document
@@ -44,10 +45,10 @@ namespace RazServer.Repositories
                 RETURNING *";
 
             using var con = NewConnection;
-            return await con.QuerySingleOrDefaultAsync<UserDocument>(query, item, transaction: tx as IDbTransaction);
+            return await (tx?.con ?? con).QuerySingleOrDefaultAsync<UserDocument>(query, item, tx?.transaction); ;
         }
 
-        public async Task<UserBankAccount> CreateBankAccount(UserBankAccount item, IDbConnection tx = null)
+        public async Task<UserBankAccount> CreateBankAccount(UserBankAccount item, TxConnection tx = null)
         {
             var query = @"
                 INSERT INTO user_bank_account
@@ -57,7 +58,7 @@ namespace RazServer.Repositories
                 RETURNING *";
 
             using var con = NewConnection;
-            return await con.QuerySingleOrDefaultAsync<UserBankAccount>(query, item, transaction: tx as IDbTransaction);
+            return await (tx?.con ?? con).QuerySingleOrDefaultAsync<UserBankAccount>(query, item, tx?.transaction); ;
         }
     }
 }

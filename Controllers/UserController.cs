@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Nconnect.Entities;
 using RazServer.DTOs;
 using RazServer.Entities;
 using RazServer.Repositories;
@@ -40,6 +41,8 @@ public class UserController : ControllerBase
 
         async Task<CreateUserResponseDto> Run(IDbConnection con, IDbTransaction tx)
         {
+            var txn = new TxConnection(con, tx);
+
             var now = DateTimeOffset.UtcNow;
 
             // 1. Create User Account
@@ -62,7 +65,7 @@ public class UserController : ControllerBase
                 IsActive = true
             };
 
-            var createdUser = await _user.Create(userAccount, con);
+            var createdUser = await _user.Create(userAccount, txn);
             if (createdUser == null)
                 throw new Exception("Failed to create user account");
 
@@ -78,7 +81,7 @@ public class UserController : ControllerBase
                     UpdatedAt = now
                 };
 
-                var createdDocument = await _user.CreateDocument(document, con);
+                var createdDocument = await _user.CreateDocument(document, txn);
                 if (createdDocument != null)
                     createdDocuments.Add(createdDocument);
             }
@@ -98,7 +101,7 @@ public class UserController : ControllerBase
                     UpdatedAt = now
                 };
 
-                var createdBankAccount = await _user.CreateBankAccount(bankAccount, con);
+                var createdBankAccount = await _user.CreateBankAccount(bankAccount, txn);
                 if (createdBankAccount != null)
                     createdBankAccounts.Add(createdBankAccount);
             }
