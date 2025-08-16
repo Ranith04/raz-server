@@ -9,6 +9,8 @@ namespace RazServer.Repositories
     public interface IUserRepository
     {
         Task<UserAccount> Create(UserAccount item, IDbConnection tx = null);
+        Task<UserDocument> CreateDocument(UserDocument item, IDbConnection tx = null);
+        Task<UserBankAccount> CreateBankAccount(UserBankAccount item, IDbConnection tx = null);
     }
 
     public class UserRepository : BaseRepository, IUserRepository
