@@ -1,14 +1,12 @@
-RAZ-SERVER Implementation
-- UserAccount Table
-
 BEGIN;
 
 CREATE TABLE user_account (
-    id SERIAL PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     middle_name VARCHAR(50),
     last_name VARCHAR(50) NOT NULL,
-    mobile_number VARCHAR(15) UNIQUE NOT NULL,
+    country_code VARCHAR(5),
+    mobile_number VARCHAR(20) UNIQUE NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
     password_hash VARCHAR(255) NOT NULL, -- Store hashed password, never plain text
     dob DATE NOT NULL,
@@ -17,13 +15,33 @@ CREATE TABLE user_account (
     residential_address TEXT,
     created_at TIMESTAMPTZ DEFAULT now(),
     updated_at TIMESTAMPTZ,
-    is_active BOOL DEFAULT TRUE
+    is_active BOOLEAN DEFAULT TRUE
 );
 
-CREATE TABLE user_documents
-(
-
+CREATE TABLE media_file (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    created_at TIMESTAMPTZ DEFAULT now()
 );
 
---COMMIT;
---ROLLBACK;
+CREATE TABLE user_document (
+    id BIGSERIAL PRIMARY KEY,
+    user_id BIGINT REFERENCES user_account(id) ON DELETE CASCADE,
+    document_media_id BIGINT REFERENCES media_file(id) ON DELETE SET NULL,
+    created_at TIMESTAMPTZ DEFAULT now(),
+    updated_at TIMESTAMPTZ
+);
+
+CREATE TABLE user_bank_account (
+    id BIGSERIAL PRIMARY KEY,
+    user_id BIGINT REFERENCES user_account(id) ON DELETE CASCADE,
+    bank_name VARCHAR(100),
+    account_number VARCHAR(30),
+    ifsc_code VARCHAR(20),
+    bank_media_id BIGINT REFERENCES media_file(id) ON DELETE SET NULL,
+    created_at TIMESTAMPTZ DEFAULT now(),
+    updated_at TIMESTAMPTZ
+);
+
+-- COMMIT;
+-- ROLLBACK;
