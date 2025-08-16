@@ -3,6 +3,19 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Build artifacts
+bin/
+obj/
+
+# VS Code settings
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.cache
+
+
 # User-specific files
 *.rsuser
 *.suo
