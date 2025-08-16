@@ -21,17 +21,41 @@ namespace RazServer.Repositories
         {
             var query = @"
                     INSERT INTO user_account 
-                    (first_name, middle_name, last_name, mobile_number, email, password_hash, dob, 
+                    (first_name, middle_name, last_name, country_code, mobile_number, email, password_hash, dob, 
                     country_of_birth, gender, residential_address, created_at, updated_at, is_active) 
                     VALUES 
-                    (@FirstName, @MiddleName, @LastName, @MobileNumber, @Email, @PasswordHash, @Dob, 
+                    (@FirstName, @MiddleName, @LastName, @CountryCode, @MobileNumber, @Email, @PasswordHash, @Dob, 
                     @CountryOfBirth, @Gender, @ResidentialAddress, now(), @UpdatedAt, @IsActive)
                     RETURNING *";
 
             using var con = NewConnection;
+            return await con.QuerySingleOrDefaultAsync<UserAccount>(query, item, transaction: tx as IDbTransaction);
+        }
 
-            return await con.QuerySingleOrDefaultAsync<UserAccount>(query, item);
+        public async Task<UserDocument> CreateDocument(UserDocument item, IDbConnection tx = null)
+        {
+            var query = @"
+                INSERT INTO user_document
+                (user_id, document_media_id, created_at, updated_at)
+                VALUES
+                (@UserId, @DocumentMediaId, now(), @UpdatedAt)
+                RETURNING *";
 
+            using var con = NewConnection;
+            return await con.QuerySingleOrDefaultAsync<UserDocument>(query, item, transaction: tx as IDbTransaction);
+        }
+
+        public async Task<UserBankAccount> CreateBankAccount(UserBankAccount item, IDbConnection tx = null)
+        {
+            var query = @"
+                INSERT INTO user_bank_account
+                (user_id, bank_name, account_number, ifsc_code, bank_media_id, created_at, updated_at)
+                VALUES
+                (@UserId, @BankName, @AccountNumber, @IfscCode, @BankMediaId, now(), @UpdatedAt)
+                RETURNING *";
+
+            using var con = NewConnection;
+            return await con.QuerySingleOrDefaultAsync<UserBankAccount>(query, item, transaction: tx as IDbTransaction);
         }
     }
 }
