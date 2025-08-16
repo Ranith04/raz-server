@@ -12,12 +12,12 @@ public record UserAccount
     public int MobileNumber { get; init; }
     public string Email { get; init; }
     public string PasswordHash { get; init; }
-    public DateTime DateOfBirth { get; init; }
+    public DateOnly DateOfBirth { get; init; }
     public string CountryOfBirth { get; init; }
     public string Gender { get; init; }
     public string ResidentialAddress { get; init; }
-    public DateTime CreatedAt { get; init; }
-    public DateTime UpdatedAt { get; init; }
+    public DateTimeOffset CreatedAt { get; init; }
+    public DateTimeOffset UpdatedAt { get; init; }
     public bool IsActive { get; init; }
 }
 
@@ -27,8 +27,8 @@ public record UserDocument
     public long Id { get; init; }
     public long UserId { get; init; }
     public long DocumentMediaId { get; init; }
-    public DateTime CreatedAt { get; init; }
-    public DateTime UpdatedAt { get; init; }
+    public DateTimeOffset CreatedAt { get; init; }
+    public DateTimeOffset UpdatedAt { get; init; }
 }
 
 public record UserBankAccount
@@ -39,6 +39,6 @@ public record UserBankAccount
     public string AccountNumber { get; init; }
     public string IfscCode { get; init; }
     public long BankMediaId { get; init; }
-    public DateTime CreatedAt { get; init; }
-    public DateTime UpdatedAt { get; init; }
+    public DateTimeOffset CreatedAt { get; init; }
+    public DateTimeOffset UpdatedAt { get; init; }
 }

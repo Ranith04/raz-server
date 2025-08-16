@@ -45,7 +45,7 @@ public record CreateUserRequestDto
     [Required]
     [DataType(DataType.Date)]
     [JsonPropertyName("date_of_birth")]
-    public DateTime DateOfBirth { get; init; }
+    public DateOnly DateOfBirth { get; init; }
 
     [Required]
     [StringLength(100)]

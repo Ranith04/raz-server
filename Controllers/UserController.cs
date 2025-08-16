@@ -40,7 +40,7 @@ public class UserController : ControllerBase
 
         async Task<CreateUserResponseDto> Run(IDbConnection con, IDbTransaction tx)
         {
-            var now = DateTime.UtcNow;
+            var now = DateTimeOffset.UtcNow;
 
             // 1. Create User Account
             var hashedPassword = HashPassword(request.Password);
