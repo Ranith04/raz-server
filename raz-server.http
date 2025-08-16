@@ -1,0 +1,6 @@
+@raz_server_HostAddress = http://localhost:5159
+
+GET {{raz_server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
