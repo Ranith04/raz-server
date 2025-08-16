@@ -73,6 +73,7 @@ public record CreateUserRequestDto
 public record UserDocumentDto
 {
     [Required]
+    [JsonPropertyName("document_media_id")]
     public long DocumentMediaId { get; init; }
 }
 
@@ -80,17 +81,21 @@ public record UserBankAccountDto
 {
     [Required]
     [StringLength(100)]
+    [JsonPropertyName("bank_name")]
     public string BankName { get; init; }
 
     [Required]
     [StringLength(30)]
+    [JsonPropertyName("account_number")]
     public string AccountNumber { get; init; }
 
     [Required]
     [StringLength(20)]
+    [JsonPropertyName("ifsc_code")]
     public string IfscCode { get; init; }
 
     [Required]
+    [JsonPropertyName("bank_media_id")]
     public long BankMediaId { get; init; }
 }
 
