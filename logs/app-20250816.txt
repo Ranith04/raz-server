@@ -143,3 +143,20 @@
 2025-08-16 17:19:56.473 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 0.7252ms
 2025-08-16 17:19:56.489 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
 2025-08-16 17:19:56.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 0.9398ms
+2025-08-16 17:20:22.395 +05:30 [INF] Application is shutting down...
+2025-08-16 17:20:22.415 +05:30 [INF] RazServer is shutting down
+2025-08-16 17:21:39.995 +05:30 [INF] Starting RazServer application
+2025-08-16 17:21:40.161 +05:30 [INF] RazServer started successfully on https://localhost:5001
+2025-08-16 17:21:40.168 +05:30 [INF] User profile is available. Using '/Users/burlasainihal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-16 17:21:40.205 +05:30 [INF] Now listening on: http://localhost:5159
+2025-08-16 17:21:40.206 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-16 17:21:40.206 +05:30 [INF] Hosting environment: Development
+2025-08-16 17:21:40.206 +05:30 [INF] Content root path: /Users/burlasainihal/Documents/otherss/raz-server
+2025-08-16 17:21:46.944 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.html - null null
+2025-08-16 17:21:46.987 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.html - 200 null text/html;charset=utf-8 43.6334ms
+2025-08-16 17:21:46.995 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/index.js - null null
+2025-08-16 17:21:46.996 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/index.js - 200 null application/javascript;charset=utf-8 1.8602ms
+2025-08-16 17:21:47.019 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - null null
+2025-08-16 17:21:47.067 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5159/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.4465ms
+2025-08-16 17:21:52.920 +05:30 [INF] Application is shutting down...
+2025-08-16 17:21:52.934 +05:30 [INF] RazServer is shutting down

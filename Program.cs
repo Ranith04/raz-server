@@ -36,6 +36,14 @@ try
             Description = "A robust ASP.NET Core Web API"
         });
 
+        // Enable XML comments if you have them
+        var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+        var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+        if (File.Exists(xmlPath))
+        {
+            c.IncludeXmlComments(xmlPath);
+        }
+
         // Add JWT authentication to Swagger
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
@@ -43,7 +51,8 @@ try
             Name = "Authorization",
             In = ParameterLocation.Header,
             Type = SecuritySchemeType.ApiKey,
-            Scheme = "Bearer"
+            Scheme = "Bearer",
+            BearerFormat = "JWT"
         });
 
         c.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -60,6 +69,10 @@ try
                 new string[] {}
             }
         });
+
+        // Group APIs by controller
+        c.TagActionsBy(api => new[] { api.GroupName ?? api.ActionDescriptor.RouteValues["controller"] });
+        c.DocInclusionPredicate((name, api) => true);
     });
 
     // Configure JWT Authentication
@@ -103,7 +116,8 @@ try
     // Configure HTTP Client
     builder.Services.AddHttpClient();
 
-    builder.Services.AddScoped<IUserRepository, UserRepository>();
+    // Register your repositories/services
+    builder.Services.AddScoped<IUserRepository, UserRepository>(); // Uncomment when you have implementation
 
     // Configure JSON options
     builder.Services.ConfigureHttpJsonOptions(options =>
