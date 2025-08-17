@@ -5,7 +5,6 @@ using System.Security.Cryptography;
 using System.Text;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Nconnect.Entities;
 using RazServer.DTOs;
 using RazServer.Entities;
 using RazServer.Repositories;

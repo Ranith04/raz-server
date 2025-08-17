@@ -2,7 +2,6 @@
 
 using System.Data;
 using Dapper;
-using Nconnect.Entities;
 using RazServer.Entities;
 
 namespace RazServer.Repositories

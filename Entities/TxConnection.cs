@@ -1,7 +1,7 @@
 #nullable disable
 using System.Data;
 
-namespace Nconnect.Entities;
+namespace RazServer.Entities;
 
 public class TxConnection
 {
